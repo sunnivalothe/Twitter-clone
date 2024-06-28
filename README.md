@@ -1,4 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Twitter-clone
+This project is created following a [YouTube tutorial](https://www.youtube.com/watch?v=P4kuSxpjA48&list=PLChiukrA-RMOEB1PRQqB1NITIRsDz9pIN) to practice and improve my programming skills, as well as to get familiar with react.js, next.js, mongodb and tailwind css.
+
+<br/>
+
+## Setting up the project and install Tailwind CSS with Next.js
+#### Create the project
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app):
+
+    npx create-next-app twitter-clone
+    cd twitter-clone 
+
+#### Install Tailwind CSS
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
+
+#### Configure the template paths in the `tailwind.config.js` file
+```
+"./app/**/*.{js,ts,jsx,tsx,mdx}",
+"./pages/**/*.{js,ts,jsx,tsx,mdx}",
+"./components/**/*.{js,ts,jsx,tsx,mdx}",
+```
+
+#### Add the Tailwind directives to the CSS `globals.css` file
+```
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+```
+<br/>
 
 ## Getting Started
 
@@ -16,7 +45,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
